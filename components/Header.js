@@ -10,8 +10,13 @@ export default function Header() {
     <header
       className="w-full flex flex-row justify-between items-center"
     >
-      <h2 className="font-bold">Blog</h2>
-      <Link href="/">New</Link>
+      <h2 className="font-bold text-3xl">Blog</h2>
+
+      <div className='flex flex-row items-center gap-2'>
+        <Link href="/">Home</Link>
+        <Link href="/new">New</Link>
+      </div>
+
       <div>
         <Show when="signed-out" >
           <SignInButton 

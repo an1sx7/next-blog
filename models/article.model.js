@@ -17,10 +17,6 @@ const articleSchema = new Schema({
     type:String,
     required:true,
   },
-  imageUrl:{
-    type:String,
-    required:true,
-  }
 }, { timestamps:true })
 
 const Article = models.Article || model('Article',articleSchema)
